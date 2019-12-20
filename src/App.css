@@ -1,0 +1,145 @@
+
+
+*{
+  
+  color: #535252;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+.padding {
+  padding-right: 20px;
+}
+.fontHeading {
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: teal;
+    align-content: center;
+    margin-bottom: 20px;
+    margin-top:20px;
+    letter-spacing: 1;
+   
+  }
+
+  .liMargin{
+    margin-top:5px;
+    margin-bottom:5px;
+    color: black;
+  }
+  .link {
+    color: teal
+    
+  }
+  .link3 {
+    color: black;
+  }
+  .link:hover {
+    color: rgb(51, 133, 255);
+  }
+
+ .userImage {
+   margin:10px 20px 10px 0px;
+ }
+ .bg-user {
+  background-color: aliceblue;
+   margin: 20px;;
+
+ }
+ .marginUser{
+   margin-top: 15px;
+ }
+
+ .userDetails{
+   color:#01B7CD
+ }
+ .userPosts {
+   position: relative;
+ }
+ .nav-color{
+  background-color: teal;
+ }
+ .btn-margin {
+   margin:20px
+ }
+.marginRecent{
+  margin:50px;
+}
+.liMargin1{
+  margin-top:5px;
+  margin-bottom:5px;
+
+}
+/* @font-face{
+  font-family: "airbnb";
+  src: url("font/airbnb-cereal-app-cufonfonts-webfont/AirbnbCerealMedium.woff");
+} */
+
+.bg-color-posts {
+  background-color: aliceblue;
+}
+.containerForPosts {
+  border: 1px solid ;
+  border-radius: 10px;
+  background-color: white;
+  border: none;
+  margin:10px 0 10px 0;
+  box-shadow:0 0 10px -7px;
+}
+
+.logo-B {
+ 
+  margin: 10px 0px 0px 0px
+
+}
+
+.positionUser{
+  margin-top:52px
+}
+.userheadingPost {
+  color: teal;
+}
+.link2:hover{
+  color: lightblue;
+}
+.margin-post {
+  margin-top: 50px;
+}
+.postBody {
+  margin: 20px 0 20px 0px;
+}
+
+.logo-c {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  position: relative;
+  right:35px;
+}
+.headingForPostPage {
+  margin-top:65px;
+  position: relative;
+  right: 115px;
+}
+.btn-border{
+  border-radius: 5px;
+  position: relative;
+  left:100px;
+  bottom: 33px;
+}
+
+.li-social {
+  display: inline;
+  padding:10px;
+  
+}
+.ul-social {
+  margin-top: 65px;
+}
+
+.positioningImage {
+  position: relative;
+  right:175px;
+}
+.link4 {
+  color: black;
+}
+.link4:hover {
+  color :#ffffff
+}
