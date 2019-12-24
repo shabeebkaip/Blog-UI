@@ -6,6 +6,7 @@ import fb from './images/img/facebook.svg'
 import instagram from './images/img/instagram.svg'
 import behance from './images/img/behance-logo.svg'
 import articleImage from './images/img/Raka-Blog-social-media-sizes-1480x550.png'
+import axios from 'axios'
 
 
 
@@ -15,8 +16,20 @@ class PostShow extends React.Component {
        this.state = {
            posts: {},
            comments:[],
-           users:{}
+           user:{}
        }
+   }
+   componentDidMount(){
+       const id= this.props.posts.userId
+       axios.get(`https://jsonplaceholder.typicode.com/users/${id}`)
+        .then(response=>{
+            const user = response.data
+            this.setState({user})
+        })
+        .catch((err)=>{
+            alert(err)
+        })
+
    }
 
     render(){
@@ -31,7 +44,7 @@ class PostShow extends React.Component {
             </div>
             <div className="col-md-5">
            
-            <h5 className="headingForPostPage">{this.props.users.name}</h5>
+            <h5 className="headingForPostPage">{this.state.user.name}</h5>
             <button className="btn btn-success btn-border btn-sm">Follow</button>
           
             </div>
@@ -72,7 +85,7 @@ class PostShow extends React.Component {
  const mapStateToProps = (state, props)=> {
     return {
         posts: state.posts.find((post)=> post.id ==  props.match.params.id),
-        users: state.users.find((user)=> user.id ==  props.match.params.id)
+        
         
     }
  }
